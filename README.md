@@ -1,65 +1,21 @@
 # Credit-Card-Default-Prediction
-Project is to conduct quantitative analysis on credit card default risk
-Credit_Card_Default_Prediction
-Supervised machine learning (Classification model)
+![creditcard readme](https://user-images.githubusercontent.com/52554694/184549632-79f90b4a-745a-4a21-a155-4191afbb4c3e.jpeg)
 
-Problem Statement
-This project is aimed at predicting the case of customers default payments in Taiwan. From the perspective of risk management, the result of predictive accuracy of the estimated probability of default will be more valuable than the binary result of classification - credible or not credible clients. We can use the K-S chart to evaluate which customers will default on their credit card payments.
+# Overview
+This is a classification model for a most common dataset, Credit Card defaulter prediction. Prediction of the next month credit card defaulter based on demographic and last six months behavioral data of customers.
 
-Dataset
-We used the [Credit Card Default payment in Taiwan] (https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients) to predict whether the credit card holders are defaulters or Non-defaulters. The Dataset and its attributes are described below
+# Motivation
+There are times when even a seemingly manageable debt, such as credit cards, goes out of control. Loss of job, medical crisis or business failure are some of the reasons that can impact your finances. In fact, credit card debts are usually the first to get out of hand in such situations due to hefty finance charges (compounded on daily balances) and other penalties.
 
-ID: ID of each client
+A lot of us would be able to relate to this scenario. We may have missed credit card payments once or twice because of forgotten due dates or cash flow issues. But what happens when this continues for months? How to predict if a customer will be defaulter in next months?
 
-LIMIT_BAL: Amount of given credit in NT dollars (includes individual and family/supplementary credit
+To reduce the risk of Banks, this model has been developed to predict customer defaulter based on demographic data like gender, age, marital status and behavioral data like last payments, past transactions etc.
 
-SEX: Gender (1=male, 2=female)
+# Dataset Information
+This dataset contains information on default payments, demographic factors, credit data, history of payment, and bill statements of credit card clients in Taiwan from April 2005 to September 2005.
 
-EDUCATION: (1=graduate school, 2=university, 3=high school, 4=others, 5=unknown, 6=unknown)
 
-MARRIAGE: Marital status (1=married, 2=single, 3=others)
-
-AGE: Age in years
-
-PAY_0: Repayment status in September, 2005 (-1=pay duly, 1=payment delay for one month, 2=payment delay for two months,8=payment delay for eight months, 9=payment delay for nine months and above)
-
-PAY_2: Repayment status in August, 2005 (scale same as above)
-
-PAY_3: Repayment status in July, 2005 (scale same as above)
-
-PAY_4: Repayment status in June, 2005 (scale same as above)
-
-PAY_5: Repayment status in May, 2005 (scale same as above)
-
-PAY_6: Repayment status in April, 2005 (scale same as above)
-
-BILL_AMT1: Amount of bill statement in September, 2005 (NT dollar)
-
-BILL_AMT2: Amount of bill statement in August, 2005 (NT dollar)
-
-BILL_AMT3: Amount of bill statement in July, 2005 (NT dollar)
-
-BILL_AMT4: Amount of bill statement in June, 2005 (NT dollar)
-
-BILL_AMT5: Amount of bill statement in May, 2005 (NT dollar)
-
-BILL_AMT6: Amount of bill statement in April, 2005 (NT dollar)
-
-PAY_AMT1: Amount of previous payment in September, 2005 (NT dollar)
-
-PAY_AMT2: Amount of previous payment in August, 2005 (NT dollar)
-
-PAY_AMT3: Amount of previous payment in July, 2005 (NT dollar)
-
-PAY_AMT4: Amount of previous payment in June, 2005 (NT dollar)
-
-PAY_AMT5: Amount of previous payment in May, 2005 (NT dollar)
-
-PAY_AMT6: Amount of previous payment in April, 2005 (NT dollar)
-
-default.payment.next.month: Default payment (1=yes, 0=no)
-
-Conclusion
+# Conclusion
 
 We started with LogisticRegression , for which we obtained an AUC score of 0.829.
 
